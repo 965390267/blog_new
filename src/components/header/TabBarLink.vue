@@ -10,7 +10,7 @@
 import { Vue } from "vue-property-decorator";
 
 export default class TabBar extends Vue {
-  private LinkList = [
+  private LinkList:Array<Object> = [
     { name: "首页", imageURL: "md-home", path: "/" },
     { name: "文章列表", imageURL: "ios-bookmarks-outline", path: "/article" },
     { name: "Demo", imageURL: "logo-youtube", path: "/demo" },

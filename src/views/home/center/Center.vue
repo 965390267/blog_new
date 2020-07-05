@@ -47,7 +47,7 @@ import { Component, Vue } from "vue-property-decorator";
 export default class Center extends Vue {
   // private side: boolean = false;
   // private list: object = {};
-  private navgation = [
+  private navgation:Array<Object> = [
     { name: " Login", icon: "iconfont icon-touxiang", path: "/login" },
     { name: " Article-List", icon: "iconfont icon-wenzhang", path: "/article" },
     { name: " Demo", icon: "iconfont icon-anli", path: "/demo" },
