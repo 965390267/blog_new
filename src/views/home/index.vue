@@ -1,0 +1,61 @@
+<template>
+ <div id="Maske">
+      <Center class="center" />
+      <div class="bg"></div>
+    </div>
+    <!-- <div><router-link to="/Home">home</router-link></div> -->
+</template>
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+import Center from "./center/Center.vue";
+@Component({
+    components:{
+        Center
+    }
+})
+export default class Index extends Vue {
+  @Prop() private msg!: string;
+}
+</script>
+
+<style lang="scss" scoped>
+#Maske {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.5s;
+  z-index: 5;
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+  }
+  .bg {
+    width: 100%;
+    height: 100vh;
+    animation: opcity 0.5s linear;
+    background:linear-gradient(#000,#311133);
+    background: url('../../assets/images/maskeBG.jpg') no-repeat center;
+    background-size: cover;
+    z-index: -99;
+  }
+  .bg::after {
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background:inherit;
+    filter: blur(3px);
+        opacity: .7;
+  }
+  @keyframes opcity {
+    0% { transform: translateX(-100%) }
+    100% {  transform: translateX(0%) }
+  }
+}
+</style>

@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family:微软雅黑,Josefin Sans,Helvetica,Helvetica Neue,Arial,sans-serif;
+    font-weight: 400;
+}
+.z-container{
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    zoom: 1;
+    display: block;
+}
+.z-col {
+    float: left;
+    flex: 0 0 auto;
+}
+@media (min-width: 576px){
+   
+    .z-col-1 {
+        display: block;
+        width: 4.16666667%;
+    }
+}
+@media (min-width: 768px){
+
+    .z-col-1 {
+        display: block;
+        width: 10.16666667%;
+    }
+}
+
+@media (min-width: 992px){
+    .z-col-1 {
+        display: block;
+        width: 20.16666667%;
+    }
+}
+
+@media (min-width: 1200px){
+    .z-col-1 {
+        display: block;
+        width: 40.16666667%;
+    }
+}
+
