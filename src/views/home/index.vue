@@ -13,7 +13,7 @@ import Center from "./center/Center.vue";
         Center
     }
 })
-export default class Index extends Vue {
+export default class Home extends Vue {
   @Prop() private msg!: string;
 }
 </script>

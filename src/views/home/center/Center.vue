@@ -43,11 +43,12 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import axios from "axios";
 @Component
 export default class Center extends Vue {
   // private side: boolean = false;
   // private list: object = {};
-  private navgation:Array<Object> = [
+  private navgation = [
     { name: " Login", icon: "iconfont icon-touxiang", path: "/login" },
     { name: " Article-List", icon: "iconfont icon-wenzhang", path: "/article" },
     { name: " Demo", icon: "iconfont icon-anli", path: "/demo" },
@@ -65,6 +66,20 @@ export default class Center extends Vue {
     } else {
       this.$router.push(path);
     }
+  }
+  created() {
+    console.time("dddd");
+  }
+  mounted() {
+    axios
+      .get("news/index")
+      .then(function(res: any) {
+        console.log(res);
+      })
+      .catch(function(err: any) {
+        console.log(err);
+      });
+    console.timeEnd("dddd");
   }
 }
 </script>
@@ -84,6 +99,7 @@ export default class Center extends Vue {
       color: white;
       margin: 0.3rem;
       font-size: 0.9rem;
+      font-style: normal;
       transition: all 0.6s;
       cursor: pointer;
     }

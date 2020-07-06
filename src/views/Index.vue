@@ -17,7 +17,7 @@ import Header from '@/components/header/header.vue'
     Header
   }
 })
-export default class HelloWorld extends Vue {
+export default class Index extends Vue {
   @Prop() private msg!: string;
 }
 </script>
