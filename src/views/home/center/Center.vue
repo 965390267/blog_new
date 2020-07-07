@@ -43,7 +43,7 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import axios from "axios";
+// import axios from "axios";
 @Component
 export default class Center extends Vue {
   // private side: boolean = false;
@@ -71,7 +71,7 @@ export default class Center extends Vue {
     console.time("dddd");
   }
   mounted() {
-    axios
+    this.$axios
       .get("news/index")
       .then(function(res: any) {
         console.log(res);
