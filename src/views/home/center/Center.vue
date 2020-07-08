@@ -50,7 +50,7 @@ export default class Center extends Vue {
   // private list: object = {};
   private navgation = [
     { name: " Login", icon: "iconfont icon-touxiang", path: "/login" },
-    { name: " Article-List", icon: "iconfont icon-wenzhang", path: "/article" },
+    { name: " Article-List", icon: "iconfont icon-wenzhang", path: "/home" },
     { name: " Demo", icon: "iconfont icon-anli", path: "/demo" },
     { name: " LeaveMessage", icon: "iconfont icon-liuyan2", path: "/message" },
     { name: " Photos", icon: "iconfont icon-xiangce", path: "/photos" },
