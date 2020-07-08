@@ -8,8 +8,20 @@ const produceNewsData = function () {
     const articles = [];
     for (let i = 0; i < 10; i++) {
         const newArticleObject = {
+            accessPulishCount:Mock.mock('@zip'),
+            articleBrief: Random.csentence(50, 100),
+            articleCategroy:Mock.mock({
+                "string|1-10": "★"
+              }),
+            articleId:Mock.mock('@zip'),
+            articleImg:Random.dataImage('300x250', 'mock的图片'),
+            content:'',
+            id:'',
+            lable:'tar',
+            likeStar:2,
+            time:Random.date(),
             title: Random.csentence(5, 30), //  Random.csentence( min, max )
-            thumbnailpics: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码
+            visited:102,
             authorname: Random.cname(), // Random.cname() 随机生成一个常见的中文姓名
             date: Random.date() + ' ' + Random.time() // Random.date()指示生成的日期字符串的格式,默认为yyyy-MM-dd；Random.time() 返回一个随机的时间字符串
         }

@@ -67,20 +67,12 @@ export default class Center extends Vue {
       this.$router.push(path);
     }
   }
-  created() {
-    console.time("dddd");
-  }
-  mounted() {
-    this.$axios
-      .get("news/index")
-      .then(function(res: any) {
-        console.log(res);
-      })
-      .catch(function(err: any) {
-        console.log(err);
-      });
-    console.timeEnd("dddd");
-  }
+  // created() {
+  
+  // }
+  // mounted() {
+ 
+  // }
 }
 </script>
 

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'leileiFont';
+    src: url('../font/SentyMARUKO.ttf');
+  }
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* font-family:微软雅黑,Josefin Sans,Helvetica,Helvetica Neue,Arial,sans-serif; */
+    font-family: "leileiFont";
+    font-weight: 400;
+}
+div,p,a,ul,li,b,i{
+ margin: 0;
+ padding: 0;
+}

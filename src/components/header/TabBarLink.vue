@@ -40,17 +40,13 @@ export default class TabBar extends Vue {
 </script>
 
 <style lang="scss" scoped>
-// @font-face {
-//   font-family: 'codeleilei';
-//   src: url('../../assets/font/2012DingYongKangYingBiKaiShuXinBan-2.ttf');
-// }
+
 #tabbarLink {
   display: flex;
   height: 3rem;
   justify-content: center;
   align-items: center;
   a {
-    font-family: "codeleilei";
     color: #f2f2f2;
     margin: 0 1rem;
     padding: 0.3rem;
@@ -62,5 +58,8 @@ export default class TabBar extends Vue {
     border-radius: 5px;
     color: lightgreen;
   }
+  .router-link-exact-active {
+      color: #42b983;
+    }
 }
 </style>
